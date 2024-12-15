@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Prédiction de Scores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="ballon.png" alt="Logo Ballon" class="logo">
+        <h1>Prédiction de Scores</h1>
+        <button id="toggle-theme-btn">Changer de Thème</button>
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <h2>Entrer les Scores</h2>
+            <table id="score-table">
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>Équipe A</th>
+                        <th>Équipe B</th>
+                        <th>Nul</th>
+                        <th>Buts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Match 1</td>
+                        <td><input type="number" class="score" data-team="A"></td>
+                        <td><input type="number" class="score" data-team="B"></td>
+                        <td><input type="number" class="score" data-team="Nul"></td>
+                        <td><input type="number" class="score" data-team="Buts"></td>
+                    </tr>
+                    <tr>
+                        <td>Match 2</td>
+                        <td><input type="number" class="score" data-team="A"></td>
+                        <td><input type="number" class="score" data-team="B"></td>
+                        <td><input type="number" class="score" data-team="Nul"></td>
+                        <td><input type="number" class="score" data-team="Buts"></td>
+                    </tr>
+                    <tr>
+                        <td>Match 3</td>
+                        <td><input type="number" class="score" data-team="A"></td>
+                        <td><input type="number" class="score" data-team="B"></td>
+                        <td><input type="number" class="score" data-team="Nul"></td>
+                        <td><input type="number" class="score" data-team="Buts"></td>
+                    </tr>
+                    <tr>
+                        <td>Match 4</td>
+                        <td><input type="number" class="score" data-team="A"></td>
+                        <td><input type="number" class="score" data-team="B"></td>
+                        <td><input type="number" class="score" data-team="Nul"></td>
+                        <td><input type="number" class="score" data-team="Buts"></td>
+                    </tr>
+                    <tr>
+                        <td>Match 5</td>
+                        <td><input type="number" class="score" data-team="A"></td>
+                        <td><input type="number" class="score" data-team="B"></td>
+                        <td><input type="number" class="score" data-team="Nul"></td>
+                        <td><input type="number" class="score" data-team="Buts"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td id="total-wins-A">0</td>
+                        <td id="total-wins-B">0</td>
+                        <td id="total-draws">0</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="calculate-btn">Calculer</button>
+            <button id="clear-btn">Effacer</button>
+        </div>
+        <div class="result-section">
+            <h2>Résultats</h2>
+            <table id="result-table">
+                <thead>
+                    <tr>
+                        <th>Équipe</th>
+                        <th>Pourcentage de Victoire</th>
+                        <th>Moyenne de Buts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Équipe A</td>
+                        <td id="percentage-A"></td>
+                        <td id="average-goals-A"></td>
+                    </tr>
+                    <tr>
+                        <td>Équipe B</td>
+                        <td id="percentage-B"></td>
+                        <td id="average-goals-B"></td>
+                    </tr>
+                    <tr>
+                        <td>Nul</td>
+                        <td id="percentage-draw"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+
+.header img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header h1 {
+    margin: 5px 0 0 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+.header button {
+    margin-top: 5px;
+    padding: 8px 16px;
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.9em;
+}
+
+.header button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.input-section, .result-section {
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 0.8em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 0.9em;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.9em;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#clear-btn {
+    background-color: #f44336;
+    border: none;
+}
+
+#clear-btn:hover {
+    background-color: #d32f2f;
+}
+
+.input-section {
+    background-color: #fff5e6;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-section {
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .header {
+    background-color: #333;
+}
+
+body.dark-mode .header h1 {
+    color: #fff;
+}
+
+body.dark-mode .header button {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+body.dark-mode .header button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode h2 {
+    color: #4CAF50;
+}
+
+body.dark-mode th {
+    background-color: #555;
+}
+
+body.dark-mode td {
+    background-color: #666;
+}
+
+body.dark-mode button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #45a049;
+}
+
+body.dark-mode .input-section {
+    background-color: #666;
+}
+
+body.dark-mode .result-section {
+    background-color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px auto;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 98%;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 0.7em;
+    }
+
+    button {
+        width: 80%;
+        margin: 5px auto;
+        padding: 6px;
+    }
+}
